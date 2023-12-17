@@ -35,13 +35,10 @@ For a sequence of images:
 python pptx_o_matic.py -i path/to/images_directory -o path/to/output.pptx
 ```
 
-Replace path/to/pdf_file.pdf with the path to your PDF file and path/to/images_directory with the path to the directory containing your images.
-Replace path/to/output.pptx with the desired output path for your PPTX file.
-The -o or --output flag is optional. If it is not set, the script will use output.pptx in the current directory as the default output file.
-The -i or --images flag specifies that the input is a directory of images. If this flag is not set, the script assumes that the input is a PDF file.
-
-### Contributing
-Contributions are welcome! Please read the contributing guidelines before getting started.
+- Replace path/to/pdf_file.pdf with the path to your PDF file and path/to/images_directory with the path to the directory containing your images.
+- Replace path/to/output.pptx with the desired output path for your PPTX file.
+- The -o or --output flag is optional. If it is not set, the script will use output.pptx in the current directory as the default output file.
+- The -i or --images flag specifies that the input is a directory of images. If this flag is not set, the script assumes that the input is a PDF file.
 
 ### License
 This project is licensed under the MIT License - see the LICENSE file for details.
