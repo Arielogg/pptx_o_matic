@@ -1,10 +1,6 @@
 # PPTX-O-MATIC
 Simple Python utility to convert Beamer PDF slides (or any succession of images) to PowerPoint.
 
-## Features
-
-- Convert PDF files into PPTX files.
-- Convert sequences of images into PPTX files.
 
 ## Installation
 
@@ -40,6 +36,6 @@ python pptx_o_matic.py -i path/to/images_directory -o path/to/output.pptx
 - The -o or --output flag is optional. If it is not set, the script will use output.pptx in the current directory as the default output file.
 - The -i or --images flag specifies that the input is a directory of images. If this flag is not set, the script assumes that the input is a PDF file.
 
-### License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
