@@ -9,7 +9,7 @@ To install this utility, you need to have Python installed on your system. If yo
 Once Python is installed, you can clone this repository to your local machine and navigate to the project directory.
 
 ```bash
-git clone https://github.com/Arielogg/pptx-o-matic.git
+git clone https://github.com/Arielogg/pptx_o_matic.git
 cd pptx_o_matic
 ```
 
