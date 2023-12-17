@@ -26,11 +26,19 @@ pip install -r requirements.txt
 ## Usage
 To convert a PDF file or a sequence of images to a PPTX file, run the following command:
 
+For PDF files:
 ```bash
-python main.py --input input.pdf --output output.pptx
+python pptx_o_matic.py path/to/pdf_file.pdf -o path/to/output.pptx
+```
+For a sequence of images:
+```bash
+python pptx_o_matic.py -i path/to/images_directory -o path/to/output.pptx
 ```
 
-Replace input.pdf with the path to your PDF file or the directory containing your images. Replace output.pptx with the desired output path for your PPTX file. 
+Replace path/to/pdf_file.pdf with the path to your PDF file and path/to/images_directory with the path to the directory containing your images.
+Replace path/to/output.pptx with the desired output path for your PPTX file.
+The -o or --output flag is optional. If it is not set, the script will use output.pptx in the current directory as the default output file.
+The -i or --images flag specifies that the input is a directory of images. If this flag is not set, the script assumes that the input is a PDF file.
 
 ### Contributing
 Contributions are welcome! Please read the contributing guidelines before getting started.
