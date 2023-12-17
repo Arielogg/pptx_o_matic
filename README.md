@@ -1,4 +1,4 @@
-# PDF-O-MATIC
+# PPTX-O-MATIC
 Simple Python utility to convert Beamer PDF slides (or any succession of images) to PowerPoint.
 
 ## Features
