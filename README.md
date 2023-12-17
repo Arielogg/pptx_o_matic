@@ -22,6 +22,11 @@ Then, you can install the required dependencies using the following command:
 pip install -r requirements.txt
 ```
 
+It's also on PyPi if you want to add it to your current project:
+```bash
+pip install pptx-o-matic
+```
+
 ## Usage
 To convert a PDF file or a sequence of images to a PPTX file, run the following command:
 
