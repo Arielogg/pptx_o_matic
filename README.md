@@ -1,4 +1,7 @@
-# PPTX-O-MATIC
+
+PPTX-O-MATIC [![PyPI version](https://badge.fury.io/py/pptx-o-matic.svg)](https://badge.fury.io/py/pptx-o-matic)
+============
+
 Simple Python utility to convert Beamer PDF slides (or any succession of images) to PowerPoint.
 
 
