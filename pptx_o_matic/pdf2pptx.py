@@ -2,12 +2,13 @@ import fitz
 import io
 from PIL import Image
 from pptx import Presentation
+from pptx.util import Inches
 import os
 
 
 def pdf_to_images(pdf_path):
     src = fitz.open(pdf_path)
-    mat = fitz.Matrix(5,5)
+    mat = fitz.Matrix(7,7)
     images = []
     for page in src:
         pix = page.get_pixmap(matrix=mat)
@@ -15,12 +16,16 @@ def pdf_to_images(pdf_path):
         images.append(img)
     return images
 
-def pdf2pptx(pdf_path, pptx_path):
+
+def pdf2pptx(pdf_path, pptx_path, aspect_ratio=(4, 3)):
     images = pdf_to_images(pdf_path)
     presentation = Presentation()
 
-    slide_width = presentation.slide_width
-    slide_height = presentation.slide_height
+    # Set slide width and height according to the aspect ratio
+    slide_width = Inches(aspect_ratio[0])
+    slide_height = Inches(aspect_ratio[1])
+    presentation.slide_width = slide_width
+    presentation.slide_height = slide_height
 
     for image in images:
         slide = presentation.slides.add_slide(presentation.slide_layouts[5])

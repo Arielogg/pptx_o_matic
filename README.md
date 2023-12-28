@@ -38,12 +38,16 @@ For a sequence of images:
 ```bash
 python pptx_o_matic.py -i path/to/images_directory -o path/to/output.pptx
 ```
+By default, the aspect ratio is set to 4:3, but you can modify it using the -a or --aspect_ratio flag as follows:
+```bash
+python pptx_o_matic.py path/to/pdf_file.pdf -o path/to/output.pptx -a 16:9
+```
 
 - Replace path/to/pdf_file.pdf with the path to your PDF file and path/to/images_directory with the path to the directory containing your images.
 - Replace path/to/output.pptx with the desired output path for your PPTX file.
 - The -o or --output flag is optional. If it is not set, the script will use output.pptx in the current directory as the default output file.
 - The -i or --images flag specifies that the input is a directory of images. If this flag is not set, the script assumes that the input is a PDF file.
+- The -a or --aspect_ratio flag is optional. If it is not set, the script will use 4:3 as the default aspect ratio.
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
-
