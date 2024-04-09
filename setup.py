@@ -10,7 +10,7 @@ setup(
     packages=find_packages(),
     install_requires=[
         'lxml==4.9.3',
-        'Pillow==10.1.0',
+        'Pillow==10.3.0',
         'PyMuPDF==1.23.7',
         'python-pptx==0.6.23',
         'XlsxWriter==3.1.9',
